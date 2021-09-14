@@ -14,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class UserConfig {
 	@Bean
 	public Docket postsApi() {
-		return new Docket(DocumentationType.SWAGGER_2).groupName("Java Techie").select()
+		return new Docket(DocumentationType.SWAGGER_2).groupName("Java").select()
 				.paths(regex("/user.*")).build();
 	}
 }
